@@ -1,6 +1,6 @@
-# Ideathon 23 - Enigma , ECell NMIT
+## Ideathon 2023 - ENIGMA ECell NMIT
 
-An annual flagship event conducted by the Entreprenurship Cell of NMIT.
+The annual flagship event conducted by the Entreprenurship Cell of NMIT.
 
 Contributors 
 
