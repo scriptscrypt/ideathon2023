@@ -1,0 +1,806 @@
+:root{
+  --yellow: #F7F719;
+  --darkBlue: #0E2D3D;
+  --orange: #EF450F;
+  --orangeLight: #e4702c;
+}
+
+/*Poppins Font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap"); */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: #f0fcff;
+  font-family: 'Poppins', sans-serif !important;
+}
+body{
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.first-container {
+  margin-top: 48px;
+  max-width: 100vw;
+  /* max-height: 100vh; */
+  background: #f0fcff;
+  background-image: url(./Images/image\ 10.png);
+  /* background-size: 64% 100%; */
+  background-size: 64%;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.first-navbar {
+  max-width: 100%;
+  position: fixed;
+  top:0;
+  left: auto;
+  /* background-color: #fed4b6; */
+  background-color: #c3e8f8;
+  opacity: 0.9;
+  z-index: 32;
+  border-radius: 64px;
+  margin:8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.first-navbar ul {
+  display: flex;
+  align-items: center;
+  margin: 0 40px;
+}
+
+.first-navbar .logo img {
+  margin: 8px;
+  max-width: 56px;
+  max-height: 56px;
+}
+
+.first-navbar ul li {
+  list-style: none;
+  /* font-family: ; */
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  /* color: #156890; */
+  color: #404040;
+  margin: 0px 20px;
+}
+
+.first-navbar ul li:hover {
+  cursor: pointer;
+  filter: brightness(0);
+}
+
+.wrapMain{
+  border-radius: 8px;
+}
+.main {
+  max-width: 100%;
+  display: flex;
+}
+
+.left-container {
+  /* width: 50%; */
+  /* height: 100%; */
+  margin-left: 50px;
+  /* padding: 20px 0px 0px 40px; */
+  padding-top: 64px;
+  display: flex;
+  flex-direction: column;
+}
+
+.left-container h1 {
+  /* font-family: "Manrope"; */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 109px;
+  color: #0e2d3d;
+  margin-top: 30px;
+}
+
+.theme {
+  /* font-family: "Manrope"; */
+  font-style: normal;
+  /* font-weight: 700; */
+  font-size: 2rem;
+  line-height: 50px;
+  /* color: #156890; */
+  color:var(--darkBlue)
+}
+
+.first-buttons {
+  margin: 8px 0px;
+
+}
+
+.btn1, .btn2 {
+  all:unset ;
+  height: fit-content;
+  /* background: #ff8c38; */
+  /* background: var(--orange); */
+  /* background: var(--orangeLight); */
+  border-radius: 8px;
+  /* font-family: "Manrope"; */
+  font-style: normal;
+  font-size: 1rem;
+  /* line-height: 27px; */
+  /* color: var(--darkBlue); */
+  margin-right: 8px;
+  padding: 8px;
+  box-shadow: 0px 2px 4px 0px var(--orangeLight);
+}
+
+.btn1:hover,.btn2:hover {
+  /* cursor: pointer; */
+  /* color: white; */
+  /* filter: brightness(1.02); */
+  /* background: #0e2d3ddf; */
+  box-shadow: 0px 2px 4px 0px var(--darkBlue);
+}
+
+.prizeDateWrapper{
+  margin:32px 0px;
+}
+.prizeDateWrapper div{
+  margin: 4px 0px;
+}
+.prize,
+.date {
+  display: flex;
+  align-items: center;
+  /* margin: 8px 0px; */
+  /* font-family: "Manrope"; */
+  font-style: normal;
+  font-weight: 700;
+  /* font-size: 32px; */
+  font-size: 1.4rem;
+  /* line-height: 44px; */
+  color: #f0180b;
+}
+.prize img,
+.date img {
+  margin-right: 16px;
+  /* margin-right: 10px; */
+}
+
+.right-container {
+  width: 50%;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.boxes {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  width: 72%;
+}
+
+.track {
+  width: 70%;
+  /* font-family: "Manrope"; */
+  font-style: normal;
+  font-weight: 700;
+  /* font-size: 48px; */
+  font-size: 3rem;
+  line-height: 66px;
+  text-align: center;
+  color: #156890;
+}
+
+.Idea_Track,
+.Startup_Track {
+  display: flex;
+  align-items: center;
+  background: rgba(239, 69, 15, 0.78);
+  border-radius: 64px 2px 2px 2px;
+  margin: 10px 0px;
+  padding: 10px;
+  /* width: 80%; */
+  height: 200px;
+  
+}
+
+.head {
+  /* text-decoration: underline; */
+  font-size: 24px;
+}
+
+.content {
+  height: 100%;
+  /* font-family: "Manrope"; */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 27px;
+  text-align: center;
+  color: #000000;
+}
+
+.content p:nth-child(2) {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 75%;
+  }
+
+  .first-container {
+    min-width: 100vw;
+    min-height: fit-content;
+    background: #f0fcff;
+    background-image: url(./Images/image\ 10.png);
+    /* background-size: 100% 50%; */
+    /* background-size: 56% 100%; */
+    background-size: 56%;
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+
+  .navbar ul {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+  }
+
+  .navbar ul li {
+    list-style: none;
+    /* font-family: "Manrope"; */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #156890;
+  }
+
+  .left-container {
+    width: 50%;
+    margin: 0;
+    padding: 0px 30px;
+  }
+
+  .left-container h1 {
+    font-size: 3rem;
+  }
+
+  .btn1,.btn2 {
+    margin: 10px 10px;
+  }
+
+  .Prize_date {
+    width: 100%;
+  }
+
+  .right-container {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .boxes {
+    align-items: center;
+    width: 100%;
+  }
+
+  .content p:nth-child(2) {
+    padding: 0px 20px;
+  }
+
+  .Idea_Track,
+  .Startup_Track {
+    border-radius: 14px;
+    height: fit-content;
+    width: 80%;
+  }
+
+  .track {
+    width: 100%;
+  }
+
+  .icon img {
+    /* position: relative; */
+    /* bottom: -10px; */
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+  }
+
+  .navbar .logo img {
+    margin: 8px;
+    max-width: 32px;
+    max-height: 32px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 75%;
+  }
+  .main {
+    flex-direction: column;
+  }
+
+  .first-container {
+    min-width: 100vw;
+    min-height: 100vh;
+    background: #f0fcff;
+    background-image: url(./Images/image\ 10.png);
+    /* background-size: 72% 56%; */
+    background-size: 56%;
+  
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+
+  .navbar ul {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+  }
+
+  .navbar ul li {
+    list-style: none;
+    /* font-family: "Manrope"; */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #156890;
+  }
+
+  .left-container {
+    width: 100%;
+    margin: 0;
+    padding: 0px 30px;
+  }
+
+  .left-container h1 {
+    font-size: 3rem;
+  }
+
+  .first-buttons {
+    flex-direction: column;
+  }
+
+  .btn1,.btn2 {
+    margin: 10px 0px;
+  }
+
+  .Prize_date {
+    width: 100%;
+  }
+
+  .right-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .boxes {
+    align-items: center;
+    width: 100%;
+  }
+
+  .Idea_Track,
+  .Startup_Track {
+    border-radius: 16px;
+    height: fit-content;
+    /* width: 90%; */
+  }
+
+  .content p:nth-child(2) {
+    padding: 0px 20px;
+  }
+
+  .track {
+    width: 100%;
+  }
+
+  .icon img {
+    /* position: relative;
+    bottom: -10px; */
+    width: 40px;
+    height: 40px;
+  }
+
+  .navbar .logo img {
+    margin: 4px;
+    max-width: 50px;
+    max-height: 60px;
+  }
+
+  .judge_card-container{
+    display: flex;
+    flex-wrap: wrap;
+    /* display: grid; */
+    /* flex-direction: column; */
+    /* grid-template-columns: auto auto auto auto; */
+    grid-gap: 20px 4px;
+    padding: 2px;
+    justify-content: center;
+  }
+}
+
+/* @media screen and (max-device-width: 1200px), screen and (max-width: 640px) {
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.time_line {
+  width: 100%;
+  /* padding: 30px 100px; */
+  /* margin: 70px 10px 0px 10px;
+  padding: 20px 20px 0px 20px; */
+}
+
+.time_line img {
+  width: 100%;
+}
+
+.page2_container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page2_container h2 {
+  /* font-weight: 700; */
+  font-size: 3.5rem;
+  color: #f0180b;
+  /* line-height: px; */
+  text-align: center;
+  /* margin: 10px 0px; */
+}
+
+.page2_container_content {
+  width: 100%;
+  height: fit-content;
+}
+
+.page2_container p {
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: center;
+  color: #156890;
+  line-height: 32px;
+}
+
+.page2_container h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #f0180b;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.discs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.disc {
+  width: 200px;
+  height: 200px;
+  border-style: solid;
+  border-color: #156890;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.line {
+  display: flex;
+  align-items: center;
+  width: 20vw;
+  background-color: #0e2d3d;
+  height: 2px;
+}
+
+.page3_container {
+  width: 100%;
+  /* height: fit-content; */
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.page3_container_content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: fit-content;
+}
+
+.page3_container h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #f0180b;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.judge_card-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* display: grid; */
+  /* flex-direction: column; */
+  /* grid-template-columns: auto auto auto auto; */
+  grid-gap: 30px;
+  padding: 10px;
+  justify-content: center;
+}
+
+.judge_card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: min-content;
+  background-color: rgba(247, 247, 25, 50%);
+  text-align: center;
+}
+
+.judge_card h5 {
+  font-size: 20px;
+}
+
+.judge_card p {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.judge_card img {
+  padding: 10px;
+  margin: 10px;
+  width: 155px;
+  height: 155px;
+}
+
+.judge_card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.judge_container {
+  padding: 2px 16px;
+}
+
+.sponsor-container {
+  width: 100%;
+  display: flex;
+  /* display: grid; */
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  /* padding: 10px; */
+  /* justify-self: self-end; */
+  justify-content: space-around;
+}
+
+.sponsor-item {
+  width: 300px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+#right-sponsor-item {
+  display: inline;
+}
+
+.page4_container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page4_container_content {
+  width: 100%;
+  height: fit-content;
+}
+
+.page4_container h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #f0180b;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.page4_container h5 {
+  color: #156890;
+  font-size: 24px;
+}
+
+.page4_container p {
+  color: black;
+  font-size: 20px;
+}
+
+.footer {
+  margin: -1px 0px;
+  margin-top: 30px;
+  padding: 10px;
+  width: 100%;
+  color: #ffffff;
+  background-color: #0E2D3D;
+  display: grid;
+  /*grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 0px; */
+  
+  justify-content: space-evenly;
+  
+  
+}
+
+.footer .cflex {
+    display : grid;
+}
+
+.socialLogoWrapper a {
+    margin: 8px;
+}
+
+.fCol1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.fCol2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.fCol3 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.fRow2 {
+  grid-area: 2 / 1 / 3 / 4;
+}
+
+.socialLogo {
+  width: 24px;
+  height: 24px;
+}
+
+.fCol2 path {
+  fill: white;
+}
+
+.fCol2 path:hover {
+    fill : rgb(152, 74, 255);
+}
+
+.footer .fRow2 {
+  width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.fRow2 a {
+  color: #fff;
+}
+.logoFtr {
+  width: 88px;
+  height: 88px;
+  object-fit: contain;
+}
+
+.faq-container{
+  padding: 10px;
+}
+
+@media screen and (max-width: 700px){
+
+  .judge_card-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* display: grid; */
+    /* flex-direction: column; */
+    /* grid-template-columns: auto auto auto auto; */
+    grid-gap: 10px 2px;
+    padding: 3px;
+    justify-content: center;
+  }
+
+  .footer{
+    margin-top: 30px;
+  }
+  
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 64%;
+  }
+
+  .time_line {
+    width: 100%;
+    /* padding: 30px 100px; */
+    /* margin: 40px 10px 0px 10px; */
+    padding: 20px 20px 0px 20px;
+  }
+
+  .page2_container p {
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+    color: #156890;
+    line-height: 30px;
+  }
+
+  .page2_container h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #f0180b;
+    text-align: center;
+    margin: 0px;
+  }
+
+  .discs {
+    width: 100%;
+    display: flex;
+    padding: 0px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .disc {
+    width: 150px;
+    height: 150px;
+    border-style: solid;
+    border-color: #156890;
+    border-radius: 50%;
+    display: flex;
+    margin: 10px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  .line {
+    display: none;
+  }
+}
